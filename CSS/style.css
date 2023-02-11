@@ -9,23 +9,25 @@ body {
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    font-weight: 400;
+}
+
+.wrapper {
+    min-height: 100%;
 }
 
 ul {
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
-ul>li {
-    margin: 0;
-    padding: 0;
+ul > li {
     list-style: none;
 }
 
 a {
     text-decoration: none;
+    display: block;
 }
 
 img {
@@ -41,6 +43,16 @@ h6 {
     margin: 0;
 }
 
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.hero {
+    height: 100vh;
+    background-color: rgba(242, 206, 218, 0.3);
+}
+
 .nav_list {
     display: flex;
     justify-content: space-between;
@@ -50,7 +62,7 @@ h6 {
 
 .logo {
     height: 42px;
-    width: 52px;
+    width: 53px;
 }
 
 .logo_img {
@@ -60,19 +72,56 @@ h6 {
 }
 
 .nav_item {
-    margin: 20px;
+    margin-right: 28px;
 }
 
 .nav_item:last-child {
     margin-right: 0px;
 }
 
+.nav_link {
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 400;
+}
+
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 25px 0px;
+}
+
+.btn {
+    background-color: #f6762c;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 36px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
 }
 
 .content {
     display: flex;
+}
+
+.content_headline {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.1em;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-family: 'Fredoka One', cursive;
+    font-weight: 500;
+    font-size: 57px;
+    line-height: 1.17;
+}
+
+.content_title {
+    margin-bottom: 24px;
 }
